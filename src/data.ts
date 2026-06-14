@@ -198,7 +198,7 @@ export const education = {
 };
 
 export const personalNotes = [
-  "Rock and power metal: Kabát, Avantasia, Sabaton, Wind Rose.",
-  "Games: modded Minecraft, Terraria, and Megabonk.",
-  "Always building side projects where design, calm UX, and practical utility meet.",
+  "I do not run from challenges. I like difficult tasks, breaking them down with team, and seeing them through responsibly.",
+  "I enjoy teamwork, open communication, and sharing context so the team can move faster together. People can rely on me to follow through, be prepared, and care about the quality of what I deliver.",
+  "Outside work, I enjoy listening to rock and power metal like Kabát, Avantasia and Sabaton, I love playing modded Minecraft, Terraria and Megabonk. In my free time I build side projects where design, calm UX, and practical utility meet.",
 ];

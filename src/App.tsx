@@ -4,6 +4,7 @@ import {
   BriefcaseBusiness,
   Calendar,
   Code2,
+  Download,
   ExternalLink,
   Gamepad2,
   GraduationCap,
@@ -272,6 +273,14 @@ function Hero() {
             >
               <ExternalLink size={18} />
               Breathe It
+            </a>
+            <a
+              href="/marek-smatana-cv.pdf"
+              download
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/22 bg-white/10 px-5 text-sm font-semibold text-white transition hover:bg-white/18"
+            >
+              <Download size={18} />
+              Download CV
             </a>
           </m.div>
         </div>
@@ -623,7 +632,7 @@ function EducationAndPersonal() {
           variants={fadeUp}
         >
           <p className="text-sm font-semibold uppercase text-ember">
-            Personality
+            Work style & personality
           </p>
           <h2 className="mt-2 text-3xl font-semibold text-ink">
             A little outside the editor.
@@ -684,6 +693,14 @@ function ContactSection() {
             <ExternalLink size={18} />
             View Breathe It
           </a>
+          <a
+            href="/marek-smatana-cv.pdf"
+            download
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/22 bg-white/10 px-5 text-sm font-semibold text-white transition hover:bg-white/18"
+          >
+            <Download size={18} />
+            Download CV
+          </a>
         </div>
       </m.div>
     </section>
@@ -712,6 +729,14 @@ function App() {
         </main>
         <footer className="border-t border-line bg-canvas px-4 py-8 text-center text-sm text-soft sm:px-6 lg:px-8">
           <p>© 2026 Marek Smatana. Built with React, Tailwind CSS, and Framer Motion.</p>
+          <a
+            href="/marek-smatana-cv.pdf"
+            download
+            className="mt-3 inline-flex items-center justify-center gap-2 font-semibold text-ember transition hover:text-leaf"
+          >
+            <Download size={16} />
+            Download PDF CV
+          </a>
         </footer>
       </div>
     </LazyMotion>
