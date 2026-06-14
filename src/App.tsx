@@ -25,6 +25,7 @@ import {
   useSpring,
 } from "framer-motion";
 import {
+  aiWorkflow,
   coreSkills,
   education,
   experience,
@@ -120,6 +121,7 @@ function Header({
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = [
+    ["AI tooling", "#ai"],
     ["Experience", "#experience"],
     ["Projects", "#projects"],
     ["Education", "#education"],
@@ -372,6 +374,57 @@ function Skills() {
               {skill}
             </m.span>
           ))}
+        </m.div>
+      </div>
+    </section>
+  );
+}
+
+function AiWorkflowSection() {
+  const icons = [Sparkles, Code2, Rocket];
+
+  return (
+    <section id="ai" className="bg-canvas px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <SectionHeading
+          eyebrow="AI tooling"
+          title="Keeping pace with AI trends through practical use."
+          text="I use modern AI tools as part of my engineering workflow: to move faster, compare approaches, review code more thoroughly, and prototype ideas without lowering the bar for final implementation."
+        />
+        <m.div
+          className="grid gap-5 md:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.18 }}
+          variants={stagger}
+        >
+          {aiWorkflow.map((item, index) => {
+            const Icon = icons[index];
+
+            return (
+              <m.article
+                key={item.title}
+                className="rounded-lg border border-line bg-panel p-6 shadow-lift dark:shadow-darklift"
+                variants={fadeUp}
+              >
+                <div className="grid size-11 place-items-center rounded-md bg-ink text-canvas">
+                  <Icon size={21} />
+                </div>
+                <h3 className="mt-5 text-xl font-semibold text-ink">{item.title}</h3>
+                <p className="mt-4 leading-7 text-soft">{item.text}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {item.chips.map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-md border border-line bg-canvas px-3 py-1.5 text-sm font-medium text-ink"
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+              </m.article>
+            );
+          })}
         </m.div>
       </div>
     </section>
@@ -651,6 +704,7 @@ function App() {
           <Hero />
           <ProfileSummary />
           <Skills />
+          <AiWorkflowSection />
           <ExperienceSection />
           <ProductsSection />
           <EducationAndPersonal />

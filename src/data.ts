@@ -28,6 +28,24 @@ export const coreSkills = [
   "Git",
 ];
 
+export const aiWorkflow = [
+  {
+    title: "AI-assisted development",
+    text: "Daily use of AI coding assistants including ChatGPT, Codex, and Claude for software development, code reviews, debugging, architecture discussions, and rapid prototyping.",
+    chips: ["ChatGPT", "Codex", "Claude", "Code review"],
+  },
+  {
+    title: "Applied AI in mobile products",
+    text: "Integrated the OpenAI API into a React Native application to generate personalized workout plans and training insights.",
+    chips: ["OpenAI API", "React Native", "Personalization", "Workout insights"],
+  },
+  {
+    title: "Pragmatic AI adoption",
+    text: "Follows AI tooling trends with a practical mindset, using them to boost productivity, explore implementation options, and move faster without giving up engineering judgment.",
+    chips: ["Productivity", "Architecture", "Debugging", "Prototyping"],
+  },
+];
+
 export const strengths = [
   {
     title: "Frontend delivery",
