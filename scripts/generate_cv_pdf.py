@@ -390,7 +390,7 @@ def build_story(doc_width: float) -> list:
             "I work across <b>React, TypeScript, React Native, testing, SEO optimization, and performance</b>. "
             "Recent work centers on Omio's organic acquisition experience, where page quality, speed, and experimentation "
             "directly affect business outcomes. Outside client work I build mobile products under Build It Studio, "
-            "including Breathe It and a workout app preparing for release.",
+            "including Breathe It and Beat It, a workout planner and fitness tracker for focused training and progress insights.",
             "Body",
         ),
     ]
@@ -493,13 +493,18 @@ def build_story(doc_width: float) -> list:
         Spacer(1, 5),
         card(
             [
-                para("Workout app - In development", "CardTitle"),
+                para("Beat It - Workout planner and fitness tracker", "CardTitle"),
                 para(
-                    "Mobile training product designed around practical workout flows, useful progress feedback, personalized workout plans, and training insights.",
+                    "Workout planner and fitness tracker for smarter plans, focused set-by-set training, progress check-ins, streaks, and AI-assisted performance insights.",
                     "Small",
                 ),
                 Spacer(1, 4),
-                para("React Native | Fitness | OpenAI API | Launch prep", "Small"),
+                para("React Native | Fitness tracker | Workout planning | AI insights", "Small"),
+                Spacer(1, 3),
+                para(
+                    '<link href="https://getbeatit.app/"><font color="#3a7e4f">getbeatit.app</font></link>',
+                    "Small",
+                ),
             ],
             padding=7,
         ),

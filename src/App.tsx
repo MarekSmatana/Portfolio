@@ -266,15 +266,6 @@ function Hero() {
               View experience
             </a>
             <a
-              href="https://buildit.studio/breatheit"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/22 bg-white/10 px-5 text-sm font-semibold text-white transition hover:bg-white/18"
-            >
-              <ExternalLink size={18} />
-              Breathe It
-            </a>
-            <a
               href="/marek-smatana-cv.pdf"
               download
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/22 bg-white/10 px-5 text-sm font-semibold text-white transition hover:bg-white/18"
@@ -329,7 +320,8 @@ function ProfileSummary() {
             <p className="text-lg leading-8 text-soft">
               Outside client work I build mobile products under Build It Studio,
               including Breathe It, a guided breathing app for calm and focus,
-              and a workout app currently preparing for release.
+              and Beat It, a workout planner and fitness tracker for focused
+              training and progress insights.
             </p>
           </m.div>
         </m.div>
@@ -563,9 +555,12 @@ function ProductsSection() {
                     {product.name}
                   </h3>
                 </div>
-                <div className="grid size-11 shrink-0 place-items-center rounded-md bg-ink text-canvas">
-                  <Rocket size={21} />
-                </div>
+                <img
+                  src={product.icon}
+                  alt={`${product.name} app icon`}
+                  className="size-14 shrink-0 rounded-lg border border-line bg-panel object-cover shadow-sm"
+                  loading="lazy"
+                />
               </div>
               <p className="mt-5 leading-7 text-soft">{product.text}</p>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -585,7 +580,7 @@ function ProductsSection() {
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ember transition hover:text-leaf"
                 >
-                  Open project <ExternalLink size={16} />
+                  {product.cta} <ExternalLink size={16} />
                 </a>
               ) : null}
             </m.article>
@@ -683,15 +678,6 @@ function ContactSection() {
           >
             <Mail size={18} />
             smat.marek@gmail.com
-          </a>
-          <a
-            href="https://buildit.studio/breatheit"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/22 bg-white/10 px-5 text-sm font-semibold text-white transition hover:bg-white/18"
-          >
-            <ExternalLink size={18} />
-            View Breathe It
           </a>
           <a
             href="/marek-smatana-cv.pdf"
